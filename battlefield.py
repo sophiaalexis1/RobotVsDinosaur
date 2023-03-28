@@ -6,7 +6,7 @@ class Battlefield:
         pass
     
     def display_welcome(self):
-        pass
+        print('\nWelcome to an epic battle for the ages! \n Only one side can win!\n')
 
     def battle_phase(self):
         pass

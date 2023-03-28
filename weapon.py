@@ -1,9 +1,23 @@
 class Weapon:
-    def __init__(self, name_passed, attack_power_passed):
-        self.name = name_passed
-        self.attack_power = attack_power_passed
+    def __init__(self):
+        self.exc = self.Excalibur
+        self.ma = self.Master_Sword
 
-# Sword = Weapon('Sword',1000)
+    def show(self):
+        print('Name:', self.name)
 
-# print(Sword.name)
-# print(Sword.attack_power)
+    class Excalibur:
+        def __init__(self):
+            self.name = 'Exalibur'
+            self.attack_power = 2500
+        
+        def display(self):
+            print('Weapon:', self.name)
+    
+    class Master_Sword:
+        def __init__(self):
+            self.name = 'Master Sword'
+            self.attack_power = 3000
+        
+        def display(self):
+            print('Weapon:', self.name)
