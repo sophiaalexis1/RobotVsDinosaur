@@ -15,9 +15,8 @@ class Robot(Weapon):
 
 
 robot_one = Robot('Arthur')
-robot_one.attack_weapon.append(Weapon())
-print(robot_one.name, robot_one.health, robot_one.attack_weapon)
-dinosaur_to_attack = 10000
+print(robot_one.name, robot_one.health, robot_one.active_weapon)
+# dinosaur_to_attack = 10000
 
-robot_one.attack_dinosaur(dinosaur_to_attack)
+# robot_one.attack_dinosaur(dinosaur_to_attack)
 
