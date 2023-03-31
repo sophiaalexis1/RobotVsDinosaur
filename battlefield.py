@@ -1,6 +1,6 @@
 from dinosaur import Dinosaur
 from robot import Robot
-valid_response = False
+
 class Battlefield(Robot, Dinosaur):
     def __init__(self):
         self.dinosaur = Dinosaur()
@@ -16,7 +16,7 @@ class Battlefield(Robot, Dinosaur):
 
     def battle_phase(self):
         while self.robot.health > 0 and self.dinosaur.health > 0:
-            self.robot.attack_dinosaur(Dinosaur)
+            self.robot.attack_dinosaur(Dinosaur())
             self.dinosaur.attack_robot(Robot)
         return
 
