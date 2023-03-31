@@ -1,10 +1,9 @@
 from weapon import Weapon
-
 weapons = ['Excalibur', 'Master_Sword']
 class Robot(Weapon):
-    def __init__(self, name_passed):
-        self.name = name_passed
-        self.active_weapon = Weapon('sword')
+    def __init__(self):
+        self.name = 'Arthur'
+        self.active_weapon = Weapon('Excalibur')
         self.health = 10000
     
     def attack_dinosaur(self, dinosaur):
@@ -13,10 +12,4 @@ class Robot(Weapon):
     
 
 
-
-robot_one = Robot('Arthur')
-print(robot_one.name, robot_one.health, robot_one.active_weapon)
-# dinosaur_to_attack = 10000
-
-# robot_one.attack_dinosaur(dinosaur_to_attack)
 

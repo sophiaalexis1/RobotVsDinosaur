@@ -1,5 +1,5 @@
 from dinosaur import Dinosaur
-from robot import Robot 
+from robot import Robot
 valid_response = False
 class Battlefield(Robot, Dinosaur):
     def __init__(self):
@@ -7,9 +7,9 @@ class Battlefield(Robot, Dinosaur):
         self.robot = Robot()
 
     def run_game(self):
-        display_welcome(self)
-        battle_phase()
-        display_winner()
+        self.display_welcome()
+        self.battle_phase()
+        self.display_winner()
     
     def display_welcome(self):
         print('\nWelcome to an epic battle for the ages! \n Only one side can win!\n')
